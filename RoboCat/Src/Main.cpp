@@ -24,6 +24,18 @@ int main(int argc, const char** argv)
 
 	SocketUtil::StaticInit();
 
+	char serverChar;
+	std::cout << "Enter 's' for server or 'c' for client: ";
+	std::cout.flush();
+	std::cin >> serverChar;
+	bool isServer = serverChar == 's';
+
+	int result = 0;
+	if(isServer)
+	{
+		
+	}
+
 	OutputWindow win;
 
 	std::thread t([&win]()
